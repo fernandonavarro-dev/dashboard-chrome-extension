@@ -1,4 +1,4 @@
-# co8314b6c896250ec1caa86fe
+Dashboard for new tabs via Chrome extension
 
 Quick start:
 
