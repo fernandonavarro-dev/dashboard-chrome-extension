@@ -36,15 +36,21 @@ div#crypto {
   display: flex;
 }
 
+div#crypto > p {
+  margin: 0;
+}
+
 div#crypto-top {
   display: flex;
   align-items: center;
-}
-
-div#crypto-bottom {
-  margin-left: 20px;
+  vertical-align: middle;
+  margin-bottom: 5px;
 }
 
 div#crypto-top > span {
   margin-left: 10px;
+}
+
+div#crypto-bottom {
+  margin-left: 20px;
 }
