@@ -3,7 +3,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 10px;
   background: no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -29,6 +29,7 @@ div.top {
 
 h1.time {
   text-align: center;
+  font-size: 5rem;
 }
 
 div#crypto {
@@ -43,7 +44,6 @@ div#crypto > p {
 div#crypto-top {
   display: flex;
   align-items: center;
-  vertical-align: middle;
   margin-bottom: 5px;
 }
 
@@ -53,4 +53,36 @@ div#crypto-top > span {
 
 div#crypto-bottom {
   margin-left: 20px;
+}
+
+div#weather {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-self: flex-start;
+  margin-top: -20px;
+}
+
+div#weather > img {
+  width: 80px;
+  margin-right: 3px;
+}
+
+p.weather-city {
+  width: 100%;
+  text-align: right;
+  margin: 0;
+  margin-top: -10px;
+  font-size: 1.3rem;
+}
+
+p.weather-temp {
+  margin: 0;
+  font-size: 1.8rem;
+  margin-left: -10px;
+}
+
+p#author {
+  font-size: 1rem;
 }
