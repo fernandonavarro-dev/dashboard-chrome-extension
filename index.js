@@ -12,3 +12,27 @@ fetch(
 )`;
     document.getElementById('author').textContent = `By: Dodi Achmad`;
   });
+
+fetch('https://api.coingecko.com/api/v3/coins/frax-share')
+  .then((res) => {
+    if (!res.ok) {
+      throw Error('Something went wrong');
+    }
+    return res.json();
+  })
+  .then((data) => {
+    document.getElementById('crypto-top').innerHTML = `
+            <div>
+                <img src=${data.image.small} />
+                <span>${data.name}</span>
+            </div>
+`;
+    document.getElementById('crypto-bottom').innerHTML += `
+            <div>
+                <p>Price: $${data.market_data.current_price.usd}</p>
+                <p>24h: % ${data.market_data.price_change_percentage_24h_in_currency.usd}</p>
+            </div>
+
+        `;
+  })
+  .catch((err) => console.error(err));
